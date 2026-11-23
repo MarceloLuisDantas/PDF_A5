@@ -1,6 +1,6 @@
-from operator import contains, truediv
 import subprocess
 import sys
+
 import pypdf
 
 
@@ -57,6 +57,7 @@ def main():
     # Exporta o novo PDF reordenado
     dest_name = pdf_name.split(".")[0] + "_A5.pdf";
     dest.write(dest_name)
+    print("PDF exportado com sucesso:", dest_name)
 
 if __name__ == "__main__":
     main()
